@@ -1,0 +1,80 @@
+.middle-box h1 {
+ font-size:66px
+}
+.field-validation-error {
+ background-color:#fff;
+ display:block;
+ color:red
+}
+.input-validation-error {
+ border-color:#ed5565
+}
+.loginscreen.middle-box {
+ max-width:400px;
+ width:100%
+}
+.ibox-title h5 {
+ float:none;
+ text-align:center
+}
+.btn-primary {
+ background-color:#003bdf;
+ border-color:#edeef1
+}
+.btn-primary:hover {
+ background-color:#007bdf;
+ border-color:rgb(0, 59, 223)
+}
+.ibox-content {
+ display:block;
+ display:block
+}
+.ibox {
+ box-shadow:none;
+ background:rgba(255,255,255,.3)
+}
+.field-validation-error {
+ background-color:#fff;
+ display:block;
+ color:red;
+ text-align:left
+}
+.form-group {
+ margin-bottom:10px
+}
+control[disabled],.form-control[readonly],fieldset[disabled] .form-control {
+ opacity:1;
+ background-color:#fff!important
+}
+#UserName {
+ padding-right:10px
+}
+*:not(input) {
+ -ms-user-select:none
+}
+.gray-bg {
+ background:url('Add backgorund image here') repeat-x
+}
+.loginscreen {
+ margin-bottom:48px;
+ max-width:400px;
+ width:100%
+}
+#UserName {
+ margin-bottom:1%
+}
+#Password {
+ margin-bottom:1%
+}
+#CaptchaInputText {
+ background-color:#fff;
+ background-image:none;
+ border:1px solid #e5e6e7;
+ border-radius:1px;
+ color:inherit;
+ display:block;
+ padding:6px 12px;
+ transition:border-color .15s ease-in-out 0s,box-shadow .15s ease-in-out 0s;
+ width:100%;
+ font-size:14px
+}
