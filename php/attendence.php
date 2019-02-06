@@ -35,8 +35,8 @@
 				<tr>
 					<td>'.$name.'</td>
 					<td>'.$roll.'</td>
-					<td><input type = "radio" name ='."$roll".' value = "present" checked = "checked"/></td>
-					<td><input type = "radio" name ='."$roll".' value = "absent"/></td>
+					<td><input type = "radio" name ="'.$roll.'" value = "present" checked = "checked"/></td>
+					<td><input type = "radio" name ="'.$roll.'" value = "absent"/></td>
 				</tr>';
 
 			}
