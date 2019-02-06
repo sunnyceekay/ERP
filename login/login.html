@@ -1,0 +1,92 @@
+#Created by Sunny
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Login</title>
+    <link href="Sakshi & Varun add styles" rel="stylesheet"/>
+
+
+
+    
+</head>
+<body class="gray-bg">
+    <div class="middle-box text-center loginscreen animated fadeInDown">
+        <div>
+            <h1 class="logo-name">
+                <img src="/img/logo.png --add logo image" />
+            </h1>
+        </div>
+        <div class="ibox float-e-margins" style="">
+            <div class="ibox-title">
+                <h5>ERP CGC("Name Suggest Please") - by TEAM</h5>
+            </div>
+            <div class="ibox-content">
+<form Id="Frm_login" action="/?Length=7" autocomplete="off" class="m-t" data-ajax="true" data-ajax-method="POST" data-ajax-success="OnSuccess" id="form0" method="post"><input name="__RequestVerificationToken" type="hidden" value="jiCYTdXQcOiSG-Yt01y_5UX5DoNe2l1a3uCJQhDtP21NaNypZpuMJNxakLDZsKjrkpx1b8uoCZDIOrccqujV7al9WyrwsituFCbEeaZMzbg1" />                    <p id="divtxtDanger" class="text-danger"></p>
+                    <div class="form-group" id="DivUserName">
+                        <input autocomplete="new-password" class="form-control" data-val="true" data-val-required="Enter Username" id="UserName" maxlength="10" name="UserName" onfocus="this.removeAttribute(&#39;readonly&#39;);" placeholder="Enter Username" readonly="readonly" tabindex="1" type="text" value="" />
+                        <p><span class="field-validation-valid" data-valmsg-for="UserName" data-valmsg-replace="true"></span></p>
+
+                    </div>
+                    <div class="form-group">
+                        <input autocomplete="new-password" class="form-control" data-val="true" data-val-required="Enter Password" id="Password" maxlength="20" name="Password" onfocus="this.removeAttribute(&#39;readonly&#39;);" placeholder="Enter Password" readonly="readonly" tabindex="2" type="password" />
+                        <span class="field-validation-valid" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary block full-width m-b" tabindex="3" id="btn_submit">Login</button>
+</form>                <a href="#"><small>Forgot password?</small></a>
+                <p class="m-t"> <small> &copy; CGC. All Rights Reserved </small> </p>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false" id="btn_OpenModel" style="display:none"></button>
+    <!--Modal popup for Reset password -->
+    <div class="modal inmodal in" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content animated bounceInRight">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reset Password</h4>
+                </div>
+                <div class="modal-body">
+                    <p><div class="ibox float-e-margins">
+
+
+<form action="/Account/_InsertHint?Length=7" autocomplete="off" class="form-horizontal" data-ajax="true" data-ajax-method="POST" data-ajax-success="OnHintSuccess" id="form1" method="post">        <p id="divtxtMsg" class="text-danger"></p>
+        <div class="form-group">
+                        <select class="form-control" data-val="true" data-val-number="The field QuestionId must be a number." data-val-required="Please Select Question" id="QuestionId" name="QuestionId" tabindex="4"><option value="">--Select Questions--</option>
+<option value="0">Add Questions for security</option>
+</select>
+                     </div>
+            <div class="form-group">
+                <input class="form-control" data-val="true" data-val-required="Please Enter Answer" id="Answer" maxlength="20" name="Answer" placeholder="Answer" tabindex="5" type="text" value="" />
+                <span class="field-validation-valid" data-valmsg-for="Answer" data-valmsg-replace="true"></span> <input id="UserName" name="UserName" type="hidden" value="" />
+            </div>    <div class="form-group">
+                <input class="form-control" data-val="true" data-val-regex="Invalid Password" data-val-regex-pattern="((?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@$&amp;]).{6,20})" data-val-required="Please Enter New Password" id="NewPassword" maxlength="20" name="NewPassword" placeholder="New Password" tabindex="6" type="password" />
+                <span class="field-validation-valid" data-valmsg-for="NewPassword" data-valmsg-replace="true"></span>
+                <div id="pswd_info">
+                    <h4>Password must meet the following requirements -- for security only strong password</h4>
+                    <ul>
+                        <li id="SpecialChracter" class="Pinvalid">At least <strong>one  special chracter</strong></li>
+                        <li id="letter" class="Pinvalid">At least <strong>one small letter</strong></li>
+                        <li id="capital" class="Pinvalid">At least <strong>one capital letter</strong></li>
+                        <li id="number" class="Pinvalid">At least <strong>one number</strong></li>
+                        <li id="length" class="Pinvalid">Be at least <strong>8 characters</strong></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form-group">
+                <input class="form-control" data-val="true" data-val-equalto="New Password And Confirm Password Does Not Match" data-val-equalto-other="*.NewPassword" data-val-required="Please Enter Confirm Password" id="ConfirmPassword" maxlength="20" name="ConfirmPassword" placeholder="Confirm Password" tabindex="7" type="password" />
+                <span class="field-validation-valid" data-valmsg-for="ConfirmPassword" data-valmsg-replace="true"></span>
+            </div>
+            <button type="submit" class="btn btn-primary block full-width m-b" id="Btn_PopupSubmit" tabindex="8">Submit</button>
+</form>
+
+</div>
+</p>
+                </div>
+            </div>
+        </div>
+    </div>
